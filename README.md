@@ -30,12 +30,13 @@ A full-stack web application for managing a book collection with user authentica
 
 ```
 Book-Management-System/
-├── backend/          # Python API server
-├── frontend/         # React + Vite application
-├── public/           # Static assets
-├── UI.png            # UI screenshot
-├── database.png      # Database schema screenshot
-├── postman.png       # Postman API screenshot
+├── backend/          
+├── frontend/
+├── SQL        
+├── public/           
+├── UI.png            
+├── database.png     
+├── postman.png      
 ├── eslint.config.js
 └── README.md
 ```
@@ -57,36 +58,8 @@ git clone https://github.com/AnushkaKhadatkar/Book-Management-System.git
 cd Book-Management-System
 ```
 
-### 2. Set Up the Database
 
-Open MySQL and run the following to create the required tables:
-
-```sql
-CREATE DATABASE books;
-USE books;
-
-CREATE TABLE users (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  email VARCHAR(255) NOT NULL UNIQUE,
-  password VARCHAR(255) NOT NULL
-);
-
-CREATE TABLE books (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(255) NOT NULL,
-  author VARCHAR(255) NOT NULL,
-  year INT
-);
-
-CREATE TABLE sessions (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  user_id INT,
-  token VARCHAR(255),
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
-### 3. Start the Backend
+### 2. Start the Backend
 
 ```bash
 cd backend
@@ -94,7 +67,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### 4. Start the Frontend
+### 3. Start the Frontend
 
 ```bash
 cd frontend
