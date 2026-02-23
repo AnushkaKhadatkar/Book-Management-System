@@ -1,0 +1,88 @@
+/* Global */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffe0f0, #f9c5d1);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+/* Header */
+.header h1 {
+  font-size: 38px;
+  color: #b03060;
+  margin-bottom: 30px;
+}
+
+/* Add Button */
+.add-btn {
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.book-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(176, 48, 96, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #b03060;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(45deg, #ff4d88, #ff6fa5);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 8px 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Cancel Button */
+.cancel-btn {
+  background: linear-gradient(45deg, #999, #666);
+}
+
+.cancel-btn:hover {
+  background: #555;
+}
